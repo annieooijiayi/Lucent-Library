@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucent Library", "Lucent Library\Lucent Library.csproj", "{B66031AA-E8FC-42EF-B2CB-CC8E24BCF0AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD06180D-8D02-4A79-B8EB-711E500573CC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B66031AA-E8FC-42EF-B2CB-CC8E24BCF0AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B66031AA-E8FC-42EF-B2CB-CC8E24BCF0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B66031AA-E8FC-42EF-B2CB-CC8E24BCF0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B66031AA-E8FC-42EF-B2CB-CC8E24BCF0AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63B3D15C-3CA8-4AD3-8435-CDD8677685A7}
+	EndGlobalSection
+EndGlobal
