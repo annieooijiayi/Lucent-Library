@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tqpTvfosXxnHX2Cjhfy08xa52NZM7TqXY3mHNRsTQ6Q=",
+  "Hash": "zPHpBoprdCuxhowCOUhZWbWa93HJyPwKRKNwaMqo/LI=",
   "Source": "Lucent Library",
   "BasePath": "_content/Lucent Library",
   "Mode": "Default",
@@ -2089,6 +2089,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\xampp1\\htdocs\\Lucent-Library\\Lucent Library\\Lucent Library\\wwwroot\\uploads\\cover\\b48353de-582c-47fd-be1b-006d51257576_ian-schneider-TamMbr4okv4-unsplash.jpg",
+      "SourceId": "Lucent Library",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp1\\htdocs\\Lucent-Library\\Lucent Library\\Lucent Library\\wwwroot\\",
+      "BasePath": "_content/Lucent Library",
+      "RelativePath": "uploads/cover/b48353de-582c-47fd-be1b-006d51257576_ian-schneider-TamMbr4okv4-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\cover\\b48353de-582c-47fd-be1b-006d51257576_ian-schneider-TamMbr4okv4-unsplash.jpg"
     }
   ]
 }

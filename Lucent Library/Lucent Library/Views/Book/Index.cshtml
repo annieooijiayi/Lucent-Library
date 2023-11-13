@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Book>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-primary">Books</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Admin" asp-action="Create" class="btn btn-primary">
+                Add a New Book
+            </a>
+        </div>
+    </div>
+    <div class="row row-cols-4">
+        @foreach (var obj in Model)
+        {
+            <div class="col">
+                <div class="card border-primary mb-3 h-100" style="max-width: 20rem;">
+                    <div class="card-body text-center pb-0">
+                        <img src="@obj.CoverPicturePath" class="mb-4" style="width: 128px; height:192px">
+                        <h5 class="card-title">@obj.Title</h5>
+                        <p class="card-text">@obj.Author</p>
+                    </div>
+                    <div class="card-footer text-center pb-3 pt-0" style="background-color:#fff; border-top:none">
+                        <a asp-controller="Book" asp-action="Detail" asp-route-id="@obj.Id" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+
+</div>

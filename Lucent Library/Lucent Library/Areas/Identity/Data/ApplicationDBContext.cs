@@ -1,4 +1,5 @@
 ﻿using Lucent_Library.Areas.Identity.Data;
+using Lucent_Library.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,8 @@ public class ApplicationDBContext : IdentityDbContext<User>
         : base(options)
     {
     }
+
+    public DbSet<Book> Books { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

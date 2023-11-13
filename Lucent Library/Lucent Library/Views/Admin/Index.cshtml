@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Book>
+@{
+    ViewData["Title"] = "AdminIndex";
+}
+
+<div class="container">
+    <div>
+        <table class="table">
+            <thead>
+                <tr class="table-primary">
+                    <th scope="col">
+                        Id
+                    </th>
+                    <th scope="col">
+                        Title
+                    </th>
+                    <th scope="col">
+                        Author
+                    </th>
+                    <th scope="col">
+                        Publish Year
+                    </th>
+                    <th scope="col">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td>
+                            @obj.Id
+                        </td>
+                        <td>
+                            @obj.Title
+                        </td>
+                        <td>
+                            @obj.Author
+                        </td>
+                        <td>
+                            @(obj.PublishDate != null ? obj.PublishDate : "-")
+                        </td>
+                        <td>
+                            <a class="btn btn-primary" asp-controller="Admin" asp-action="Edit" asp-route-id="@obj.Id"><i class="bi bi-pencil-square"></i> &nbsp; Edit</a>
+
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal-@obj.Id" data-id="@obj.Id">
+                                <i class="bi bi-trash"></i> &nbsp; Delete
+                            </button>
+
+                            <div class="modal fade" id="deleteModal-@obj.Id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="deleteModalLabel">Are you sure?</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>This will delete the book permanently, you cannot undo this action.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Cancel</button>
+                                            <form method="post" asp-controller="Admin" asp-action="Delete" asp-route-id="@obj.Id">
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
